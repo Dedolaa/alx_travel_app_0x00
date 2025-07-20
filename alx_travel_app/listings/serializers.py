@@ -10,3 +10,13 @@ class BookingSerializer(serializers.ModelSerializer):
     class Meta:
         model = Booking
         fields = '__all__'
+
+# listings/serializers.py
+
+from rest_framework import serializers
+from .models import Listing
+
+class ListingSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Listing
+        fields = '__all__'
